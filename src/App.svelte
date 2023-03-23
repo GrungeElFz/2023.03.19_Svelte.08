@@ -3,7 +3,13 @@
 	import Settings from './lib/pages/Settings.svelte';
 
 	let page;
+
+	function onRouteChange() {
+		console.log(window.location.hash.slice(1));
+	}
 </script>
+
+<svelte:window on:hashchange={onRouteChange} />
 
 <nav>
 	<a href="#/">Home</a>
