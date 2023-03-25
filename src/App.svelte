@@ -6,11 +6,11 @@
 	let page;
 
 	function onRouteChange() {
-		const path = console.log(window.location.hash.slice(1));
+		const path = window.location.hash.slice(1);
 
-		if (page === '/') {
+		if (path === '/') {
 			page = 'home';
-		} else if (page === '/settings') {
+		} else if (path === '/settings') {
 			page = 'settings';
 		} else {
 			window.location.hash = '/';
