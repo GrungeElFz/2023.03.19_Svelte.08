@@ -1,5 +1,6 @@
 <script>
 	import { onMount } from 'svelte';
+	import Head from './lib/Head.svelte';
 	import Home from './lib/pages/Home.svelte';
 	import Settings from './lib/pages/Settings.svelte';
 
@@ -21,20 +22,12 @@
 </script>
 
 <svelte:window on:hashchange={onRouteChange} />
+<Head />
 
 <nav>
 	<a href="#/">Home</a>
 	<a href="#/settings">Settings</a>
 </nav>
-
-<svelte:head>
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link
-		href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;300;400;500;700&display=swap"
-		rel="stylesheet"
-	/>
-</svelte:head>
 
 {#if page === 'home'}
 	<Home />
