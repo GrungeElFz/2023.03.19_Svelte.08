@@ -5,4 +5,10 @@
 		href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;300;400;500;700&display=swap"
 		rel="stylesheet"
 	/>
+	<style>
+		:root {
+			--backgroundColor: rgb(35, 35, 35);
+			--color: rgb(245, 245, 245);
+		}
+	</style>
 </svelte:head>
