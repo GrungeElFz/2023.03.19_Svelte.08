@@ -5,12 +5,12 @@
 <h2>Settings</h2>
 
 <label>
-  <input bind:group={$settings.colorScheme} type="radio" name="colorScheme" value="dark" />
+  <input bind:group={$settings.colorScheme} type="radio" name="colorScheme" value="Dark" />
 	Dark
 </label>
 
 <label>
-  <input bind:group={$settings.colorScheme} type="radio" name="colorScheme" value="light" />
+  <input bind:group={$settings.colorScheme} type="radio" name="colorScheme" value="Light" />
 	Light
 </label>
 
@@ -18,7 +18,7 @@
 
 <button
 on:click={() => {
-  $settings.colorScheme = $settings.colorScheme === 'dark' ? 'light' : 'dark';
+  $settings.colorScheme = $settings.colorScheme === 'Dark' ? 'Light' : 'Dark';
 }}>Toggle Color Scheme</button
 >
 
