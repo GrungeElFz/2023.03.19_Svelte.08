@@ -1,6 +1,12 @@
 :root {
-	background-color: rgb(35, 35, 35);
-	color: rgb(245, 245, 245);
+	--backgroundColor: rgb(35, 35, 35);
+	--color: rgb(245, 245, 245);
 	--buttonBgColor: orangered;
-  --buttonTextColor: white;
+	--buttonTextColor: white;
+}
+
+body {
+	background-color: var(--backgroundColor);
+	color: var(--color);
+	font-family: 'IBM Plex Mono', monospace;
 }
