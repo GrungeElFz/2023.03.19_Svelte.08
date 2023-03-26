@@ -1,7 +1,7 @@
 import { writable } from 'svelte/store';
 
 const settings = writable({
-	colorScheme: 'dark',
+	colorScheme: 'Dark',
 	language: 'en',
 	fontSize: 12
 });
